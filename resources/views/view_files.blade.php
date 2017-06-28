@@ -29,7 +29,7 @@
     <tbody>
       @foreach($request_data as $row)
                 <tr> 
-                    <td><a href="{{$path}}/app/uploads/{{ $row->ID }}">{{$row->ID}}</a></td>
+                    <td><a href="{{ storage_path('app/uploads/').$row->ID }}">{{$row->ID}}</a></td>
                     <td>{{$row->File_Name}}</td>
                     <td>{{$row->Project_Name}}</td>
                     <td>{{$row->Project_Lead_Name}}</td>
